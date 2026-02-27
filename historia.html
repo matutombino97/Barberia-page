@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia | Barbería Premium</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="scroller" id="scroller">
+
+        <!-- Navbar -->
+        <nav class="navbar relative z-50 p-6 flex justify-between items-center w-full mix-blend-difference pb-8">
+            <a href="index.html" class="logo font-oswald text-2xl font-bold tracking-widest text-[#d4af37] uppercase magnetic"
+                data-cursor="hover">
+                Barber<span class="text-white">Co.</span>
+            </a>
+
+            <a href="index.html" class="menu-toggle magnetic flex flex-col gap-2 w-10 h-8 justify-center items-end"
+                data-cursor="hover">
+                <span class="line line-1 w-full h-[2px] bg-white transition-all duration-300"></span>
+                <span class="line line-2 w-3/4 h-[2px] bg-white transition-all duration-300"></span>
+            </a>
+        </nav>
+
+        <!-- Hero Section de Historia -->
+        <section class="w-full h-screen bg-[#0a0a0a] relative flex items-center justify-center overflow-hidden">
+            <div class="hero-bg absolute inset-0 bg-[#111] bg-cover bg-center bg-no-repeat"
+                style="background-image: url('hero_bg.png'); filter: brightness(0.5);"></div>
+
+            <div class="hero-content relative z-10 text-center flex flex-col items-center gap-6">
+                <h1 class="hero-title font-oswald text-[8vw] leading-[0.9] text-white uppercase mix-blend-difference overflow-hidden">
+                    <span class="hero-title-line block translate-y-full">Nuestra</span>
+                    <span class="hero-title-line block translate-y-full text-[#d4af37]">Historia</span>
+                </h1>
+                <p class="hero-subtitle font-inter text-lg md:text-xl text-gray-400 font-light tracking-wide max-w-md opacity-0">
+                    Desde 2009, BarberCo. redefinió lo que significa excelencia en barbería.</p>
+            </div>
+        </section>
+
+        <!-- Historia Completa -->
+        <section class="w-full bg-[#0a0a0a] py-32 px-6 md:px-20 relative z-10">
+            <div class="max-w-4xl mx-auto">
+
+                <div class="space-y-12">
+                    <!-- Parte 1: Los Orígenes -->
+                    <div class="bg-[#111] border border-white/10 rounded-2xl p-8 md:p-12 history-card">
+                        <h2 class="font-oswald text-4xl text-[#d4af37] mb-6">Los Orígenes: 2009</h2>
+                        <p class="font-inter text-gray-300 text-lg leading-relaxed mb-6">
+                            En una esquina modesta del barrio de San Telmo, Buenos Aires, Marco Rosselli abrió las puertas de BarberCo. con apenas 22 años de edad. Había emigrado de Italia cinco años antes, con una navaja heredada de su abuelo y un sueño: transformar la barbería argentina en un arte de verdad.
+                        </p>
+                        <p class="font-inter text-gray-400 text-lg leading-relaxed">
+                            La barbería tradicional estaba en crisis. Las máquinas eléctricas baratas ganaban terreno, y el oficio se despersonalizaba. Marco vio oportunidad donde otros veían ruinas. Su primer local tenía apenas 12 metros cuadrados, dos espejos y una fe inquebrantable de que los hombres volverían a valorar la precisión y el ritual.
+                        </p>
+                    </div>
+
+                    <!-- Parte 2: Los Primeros Años -->
+                    <div class="bg-[#111] border border-white/10 rounded-2xl p-8 md:p-12 history-card">
+                        <h2 class="font-oswald text-4xl text-[#d4af37] mb-6">Los Primeros Años: Lucha y Persistencia</h2>
+                        <p class="font-inter text-gray-300 text-lg leading-relaxed mb-6">
+                            Los primeros tres años fueron brutales. Marco trabajaba 12 horas diarias, 6 días a la semana. Su único cliente fijo era un jubilado del barrio que lo recomendó con su grupo de amigos. Pero poco a poco, la calidad habla. Hombres que no se habían cortado el cabello "bien" en años volvían una y otra vez. La boca a boca funcionó.
+                        </p>
+                        <p class="font-inter text-gray-400 text-lg leading-relaxed mb-6">
+                            En 2011, Marco tomó su primera decisión importante: cerrar la barbería por tres meses e irse a Europa. Su objetivo: aprender de los mejores. Viajó a París, Milán, Barcelona y Londres. En cada ciudad, convivió con maestros barberos. En París aprendió la técnica francesa de líneas limpias. En Milán, el arte del delineado milimétrico. En Londres, la importancia de la experiencia del cliente.
+                        </p>
+                        <p class="font-inter text-gray-400 text-lg leading-relaxed">
+                            Cuando regresó, BarberCo. no volvió a ser lo mismo. Sus clientes notaron la diferencia inmediatamente. Las técnicas europeas aplicadas a clientela argentina crearon un estilo único, contemporáneo pero respetando la tradición.
+                        </p>
+                    </div>
+
+                    <!-- Parte 3: La Expansión -->
+                    <div class="bg-[#111] border border-white/10 rounded-2xl p-8 md:p-12 history-card">
+                        <h2 class="font-oswald text-4xl text-[#d4af37] mb-6">2014-2018: Reconocimiento y Crecimiento</h2>
+                        <p class="font-inter text-gray-300 text-lg leading-relaxed mb-6">
+                            Entre 2014 y 2016, Marco se convirtió en una leyenda local. Trabajaba sin cita previa, construyendo una comunidad de "hombres que se cuidaban". Su barbería se llenaba desde la mañana de ejecutivos, artistas, deportistas y gente del barrio que simplemente quería verse bien. La espera era de hasta 3 horas.
+                        </p>
+                        <p class="font-inter text-gray-400 text-lg leading-relaxed mb-6">
+                            En 2017, marco viajó nuevamente, esta vez a Tokio. Pasó dos meses en Shinjuku, en una barbería tradicional. Allí aprendió que cada cliente es único, que el barbero es tanto psicólogo como artista. Aprendió a escuchar. Aprendió que la paciencia es una herramienta tan valiosa como la navaja.
+                        </p>
+                        <p class="font-inter text-gray-400 text-lg leading-relaxed mb-6">
+                            2017 marcó el punto de quiebre: BarberCo. abrió su segundo local. Y poco después, en 2018, el tercero. Pero Marco mantenía un estricto control de calidad. Cada nuevo barbero contratado recibía 6 meses de entrenamiento intensivo. No todos lo soportaban.
+                        </p>
+                        <p class="font-inter text-gray-400 text-lg leading-relaxed">
+                            "Prefiero tener tres barberos excelentes que diez mediocres", decía siempre.
+                        </p>
+                    </div>
+
+                    <!-- Parte 4: Filosofía Actual -->
+                    <div class="bg-[#111] border border-white/10 rounded-2xl p-8 md:p-12 history-card">
+                        <h2 class="font-oswald text-4xl text-[#d4af37] mb-6">2019 hasta Hoy: Excelencia como Estándar</h2>
+                        <p class="font-inter text-gray-300 text-lg leading-relaxed mb-6">
+                            Hoy, 15 años después, BarberCo. es más que números. Es una filosofía. Cada corte es un acto de precisión. Cada cliente sale no solo con una imagen renovada, sino con la confianza de haber sido tratado como alguien que importa.
+                        </p>
+                        <p class="font-inter text-gray-400 text-lg leading-relaxed mb-6">
+                            Nuestro equipo está compuesto por barberos certificados con experiencia internacional. Utilizamos productos premium de las mejores marcas italianas. Invertimos en nuestro oficio porque creemos que el cultivo personal nunca es un gasto, es una inversión.
+                        </p>
+                        <p class="font-inter text-gray-400 text-lg leading-relaxed">
+                            La pregunta que nos hacemos cada día es simple: "¿Cómo podemos hacer que nuestro cliente se sienta como la mejor versión de sí mismo?" Y en esa búsqueda constante de excelencia, encontramos nuestro propósito. No cortamos cabello. Transformamos personas.
+                        </p>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="bg-gradient-to-r from-[#d4af37]/20 to-[#d4af37]/10 border border-[#d4af37]/50 rounded-2xl p-8 md:p-12 text-center">
+                        <h3 class="font-oswald text-3xl text-[#d4af37] mb-4">Sé Parte de Nuestra Historia</h3>
+                        <p class="font-inter text-gray-300 text-lg mb-8">
+                            Cada cliente es un nuevo capítulo en BarberCo. Descubre cómo podemos transformar tu imagen.
+                        </p>
+                        <button onclick="abrirWhatsApp()"
+                            class="px-8 py-4 bg-[#d4af37] text-black uppercase tracking-widest font-oswald text-sm font-bold hover:bg-[#e5c158] transition-colors duration-500 magnetic rounded-lg"
+                            data-cursor="hover">
+                            Agenda Tu Cita
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5491234567890?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20BarberCo." target="_blank" class="whatsapp-btn fixed bottom-10 right-10 z-50 magnetic" data-cursor="hover">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="30" fill="#25D366"></circle>
+            <path d="M30 14C21.176 14 14 21.176 14 30C14 33.078 14.898 35.918 16.382 38.298L14.5 45L21.85 43.18C24.166 44.538 26.922 45.5 30 45.5C38.824 45.5 46 38.324 46 29.5C46 20.676 38.824 13.5 30 13.5M30 14C21.176 14 14 21.176 14 30C14 33.078 14.898 35.918 16.382 38.298L14.5 45L21.85 43.18C24.166 44.538 26.922 45.5 30 45.5C38.824 45.5 46 38.324 46 29.5" fill="white" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22.5 26.5C22.258 26.033 22.033 26 21.783 26C21.533 26 21.083 26.1 20.683 26.617C20.283 27.133 19.5 28.067 19.5 29.967C19.5 31.867 20.717 33.717 20.933 34.017C21.15 34.317 23.75 38.267 27.933 40.033C31.733 41.633 32.767 41.433 33.983 41.317C35.2 41.2 37.583 40.05 38.083 38.75C38.583 37.45 38.583 36.367 38.467 36.133C38.35 35.9 38.083 35.783 37.65 35.55C37.217 35.317 35.633 34.55 35.233 34.433C34.833 34.317 34.55 34.367 34.267 34.85C34 35.3 33.417 36.133 33.133 36.417C32.85 36.7 32.55 36.75 32.117 36.533C31.683 36.317 30.533 35.9 29.133 34.667C28 33.717 27.267 32.517 27 31.917C26.733 31.317 27.017 31.05 27.233 30.833C27.417 30.65 27.65 30.367 27.867 30.083C28.083 29.8 28.15 29.583 28.317 29.283C28.483 28.983 28.433 28.717 28.317 28.483C28.2 28.25 27.533 26.667 27.083 25.717C26.683 24.917 26.267 25.033 25.967 25.033C25.7 25.033 25.433 25.033 25.167 25.033C24.9 25.033 24.483 25.15 24.083 25.667C23.683 26.183 22.867 27.083 22.867 27.517" fill="#25D366"/>
+        </svg>
+    </a>
+
+    <!-- GSAP & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+    
+    <script>
+        function abrirWhatsApp() {
+            const mensaje = `Hola! Me gustaría agendar una cita en BarberCo. ¿Cuál es tu disponibilidad?`;
+            const numero = '5491234567890'; // Reemplazar con tu número
+            const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        }
+
+        // Animaciones de historia
+        gsap.from('.hero-title-line', {
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power4.out",
+            delay: 0.3
+        });
+
+        gsap.to('.hero-subtitle', {
+            opacity: 1,
+            y: 0,
+            duration: 1.2,
+            ease: "power2.out",
+            delay: 0.8
+        });
+
+        // Animar las tarjetas de historia al scroll
+        gsap.to('.history-card', {
+            scrollTrigger: {
+                trigger: '.history-card',
+                start: 'top 80%'
+            },
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: "power2.out"
+        });
+
+        // Asegurar que las tarjetas empiezan invisibles
+        gsap.set('.history-card', { opacity: 0, y: 20 });
+    </script>
+
+</body>
+
+</html>

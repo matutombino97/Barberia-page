@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería Premium | The Art of Grooming</title>
+
+    <!-- Fonts: Oswald (Headings) and Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Preloader -->
+    <div class="loader">
+        <h1 class="loader-text">CRAFTING STYLE.</h1>
+    </div>
+
+    <!-- Main Wrapper for Lenis Smooth Scroll -->
+    <div class="scroller" id="scroller">
+
+        <!-- Navbar -->
+        <nav class="navbar relative z-50 p-6 flex justify-between items-center w-full mix-blend-difference pb-8">
+            <div class="logo font-oswald text-2xl font-bold tracking-widest text-[#d4af37] uppercase magnetic"
+                data-cursor="hover">
+                Barber<span class="text-white">Co.</span>
+            </div>
+
+            <button class="menu-toggle magnetic flex flex-col gap-2 w-10 h-8 justify-center items-end"
+                data-cursor="hover">
+                <span class="line line-1 w-full h-[2px] bg-white transition-all duration-300"></span>
+                <span class="line line-2 w-3/4 h-[2px] bg-white transition-all duration-300"></span>
+            </button>
+        </nav>
+
+        <!-- Fullscreen Menu Overlay -->
+        <div class="menu-overlay fixed inset-0 bg-[#0a0a0a] z-40 translate-y-[-100%] flex items-center justify-center">
+            <div class="menu-links flex flex-col gap-8 text-center">
+                <a href="#home"
+                    class="menu-link font-oswald text-5xl md:text-7xl text-white uppercase hover:text-[#d4af37] transition-colors"
+                    data-cursor="hover">Inicio</a>
+                <a href="#services"
+                    class="menu-link font-oswald text-5xl md:text-7xl text-white uppercase hover:text-[#d4af37] transition-colors"
+                    data-cursor="hover">Servicios</a>
+                <a href="#about"
+                    class="menu-link font-oswald text-5xl md:text-7xl text-white uppercase hover:text-[#d4af37] transition-colors"
+                    data-cursor="hover">El Maestro</a>
+                <a href="#contact"
+                    class="menu-link font-oswald text-5xl md:text-7xl text-white uppercase hover:text-[#d4af37] transition-colors"
+                    data-cursor="hover">Reserva</a>
+            </div>
+        </div>
+
+        <!-- Sections will go here -->
+        <header id="home" class="hero w-full h-screen relative flex items-center justify-center overflow-hidden">
+            <!-- Image/Video Background -->
+            <div class="hero-bg absolute inset-0 bg-[#111] bg-cover bg-center bg-no-repeat"
+                style="background-image: url('hero_bg.png'); filter: brightness(0.6);"></div>
+
+            <div class="hero-content relative z-10 text-center flex flex-col items-center gap-6">
+                <h1
+                    class="hero-title font-oswald text-[10vw] leading-[0.9] text-white uppercase mix-blend-difference overflow-hidden">
+                    <span class="hero-title-line block translate-y-full">The Art of</span>
+                    <span class="hero-title-line block translate-y-full text-[#d4af37]">Grooming</span>
+                </h1>
+                <p
+                    class="hero-subtitle font-inter text-lg md:text-xl text-gray-400 font-light tracking-wide max-w-md opacity-0">
+                    Elevando la barbería a una obra de arte contemporánea.</p>
+                <button
+                    class="hero-btn mt-8 px-8 py-4 border border-[#d4af37] text-[#d4af37] uppercase tracking-widest font-inter text-sm hover:bg-[#d4af37] hover:text-black transition-colors duration-500 magnetic opacity-0"
+                    data-cursor="hover">
+                    Reservar Cita
+                </button>
+            </div>
+        </header>
+
+        <!-- SERVICES SECTION (3D TILT CARDS) -->
+        <section id="services" class="w-full min-h-screen bg-[#0a0a0a] py-32 px-6 md:px-20 relative z-10">
+            <div class="max-w-7xl mx-auto">
+
+                <div class="section-header mb-20 overflow-hidden">
+                    <span
+                        class="text-[#d4af37] font-inter uppercase tracking-[0.3em] text-sm md:text-md mb-4 block section-subtitle translate-y-full">Nuestra
+                        Especialidad</span>
+                    <h2 class="font-oswald text-5xl md:text-7xl text-white uppercase section-title translate-y-full">
+                        Servicios <br>Premium</h2>
+                </div>
+
+                <!-- Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 perspective-1000">
+
+                    <!-- Card 1 -->
+                    <a href="corte-imperial.html" class="service-card relative h-[450px] rounded-xl overflow-hidden cursor-none bg-[#111] border border-white/5 transform-style-3d group hover:shadow-[0_0_40px_rgba(212,175,55,0.2)] transition-shadow" data-cursor="hover">
+                        <img src="corte-imperial.jpg" alt="Corte Imperial" class="absolute inset-0 w-full h-full object-cover brightness-50 group-hover:brightness-75 transition-all duration-500">
+                        <div class="card-content absolute inset-0 p-8 flex flex-col justify-end z-20 translate-z-50 transition-transform duration-300">
+                            <h3 class="font-oswald text-3xl text-white mb-2 group-hover:text-[#d4af37] transition-colors">Corte Imperial</h3>
+                            <p class="font-inter text-gray-400 text-sm mb-6 leading-relaxed">Técnicas avanzadas con tijera y navaja, diseñadas a la estructura ósea de tu rostro.</p>
+                            <span class="text-white font-oswald text-xl border-t border-white/10 pt-4">$45.00</span>
+                        </div>
+                        <div class="card-glow absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 mix-blend-overlay pointer-events-none" style="background: radial-gradient(circle at center, rgba(212,175,55,0.4) 0%, transparent 70%);"></div>
+                    </a>
+
+                    <!-- Card 2 -->
+                    <a href="barba-ejecutiva.html" class="service-card relative h-[450px] rounded-xl overflow-hidden cursor-none bg-[#111] border border-white/5 transform-style-3d group hover:shadow-[0_0_40px_rgba(212,175,55,0.2)] transition-shadow" data-cursor="hover">
+                        <img src="barba-ejecutiva.jpeg" alt="Barba Ejecutiva" class="absolute inset-0 w-full h-full object-cover brightness-50 group-hover:brightness-75 transition-all duration-500">
+                        <div class="card-content absolute inset-0 p-8 flex flex-col justify-end z-20 translate-z-50 transition-transform duration-300">
+                            <h3 class="font-oswald text-3xl text-white mb-2 group-hover:text-[#d4af37] transition-colors">Barba Ejecutiva</h3>
+                            <p class="font-inter text-gray-400 text-sm mb-6 leading-relaxed">Ritual de toallas calientes, aceites esenciales y delineado milimétrico con navaja libre.</p>
+                            <span class="text-white font-oswald text-xl border-t border-white/10 pt-4">$35.00</span>
+                        </div>
+                        <div class="card-glow absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 mix-blend-overlay pointer-events-none" style="background: radial-gradient(circle at center, rgba(212,175,55,0.4) 0%, transparent 70%);">
+                        </div>
+                    </a>
+
+                    <!-- Card 3 -->
+                    <a href="experiencia-full.html" class="service-card relative h-[450px] rounded-xl overflow-hidden cursor-none bg-[#111] border border-white/5 transform-style-3d group hover:shadow-[0_0_40px_rgba(212,175,55,0.2)] transition-shadow" data-cursor="hover">
+                        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=60" alt="Experiencia Full" class="absolute inset-0 w-full h-full object-cover brightness-50 group-hover:brightness-75 transition-all duration-500">
+                        <div class="card-content absolute inset-0 p-8 flex flex-col justify-end z-20 translate-z-50 transition-transform duration-300">
+                            <h3 class="font-oswald text-3xl text-white mb-2 group-hover:text-[#d4af37] transition-colors">Experiencia Full</h3>
+                            <p class="font-inter text-gray-400 text-sm mb-6 leading-relaxed">El tratamiento definitivo. Corte, barba, mascarilla facial negra y masaje capilar profundo.</p>
+                            <span class="text-white font-oswald text-xl border-t border-white/10 pt-4">$85.00</span>
+                        </div>
+                        <div class="card-glow absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 mix-blend-overlay pointer-events-none" style="background: radial-gradient(circle at center, rgba(212,175,55,0.4) 0%, transparent 70%);"></div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- THE MASTER SECTION (ABOUT & PARALLAX) -->
+        <section id="about" class="w-full min-h-screen bg-[#111] py-32 relative z-10 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 md:px-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+                <div class="about-content">
+                    <span
+                        class="text-[#d4af37] font-inter uppercase tracking-[0.3em] text-sm md:text-md mb-4 block section-subtitle translate-y-full">Detrás
+                        de la Navaja</span>
+                    <h2
+                        class="font-oswald text-5xl md:text-7xl text-white uppercase mb-8 section-title overflow-hidden">
+                        <span class="block translate-y-full block-title">El</span>
+                        <span class="block translate-y-full block-title text-[#d4af37]">Maestro</span>
+                    </h2>
+                    <p class="font-inter text-gray-400 text-lg leading-relaxed mb-8 parallax-text">
+                        Con más de 15 años perfeccionando el arte en las capitales de la moda europea, nuestro fundador
+                        trae un nivel de precisión y sofisticación inigualable a la barbería moderna. No es sólo un
+                        corte; es arquitectura facial.
+                    </p>
+                    <a href="#historia"
+                        class="px-8 py-4 bg-transparent border border-white text-white uppercase tracking-widest font-inter text-sm hover:bg-white hover:text-black transition-colors duration-500 magnetic w-max inline-block"
+                        data-cursor="hover">
+                        Descubrir Historia
+                    </a>
+                </div>
+
+                <!-- Parallax Image Container -->
+                <div class="about-image-wrapper relative h-[600px] md:h-[800px] w-full rounded-2xl overflow-hidden cursor-none shadow-[0_0_50px_rgba(212,175,55,0.1)]"
+                    data-cursor="hover">
+                    <div class="absolute inset-0 bg-black/40 z-10 pointer-events-none"></div>
+                    <img src="hero_bg.png" alt="Master Barber"
+                        class="about-img absolute top-[-20%] left-0 w-full h-[140%] object-cover transform scale-110 grayscale brightness-75 hover:grayscale-0 transition-all duration-1000">
+                </div>
+            </div>
+        </section>
+
+        <!-- HISTORIA SECTION -->
+        <section id="historia" class="w-full bg-[#111] py-32 relative z-10 overflow-hidden">
+            <div class="max-w-6xl mx-auto px-6 md:px-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+                <!-- Parallax Image Container -->
+                <div class="history-image-wrapper relative h-[600px] md:h-[800px] w-full rounded-2xl overflow-hidden cursor-none shadow-[0_0_50px_rgba(212,175,55,0.1)]"
+                    data-cursor="hover">
+                    <div class="absolute inset-0 bg-black/40 z-10 pointer-events-none"></div>
+                    <img src="hero_bg.png" alt="Barbería Historia"
+                        class="history-img absolute top-[-20%] left-0 w-full h-[140%] object-cover transform scale-110 grayscale brightness-75 hover:grayscale-0 transition-all duration-1000">
+                </div>
+
+                <div class="history-content">
+                    <span
+                        class="text-[#d4af37] font-inter uppercase tracking-[0.3em] text-sm md:text-md mb-4 block section-subtitle translate-y-full">Nuestros Orígenes</span>
+                    <h2
+                        class="font-oswald text-5xl md:text-7xl text-white uppercase mb-8 section-title overflow-hidden">
+                        <span class="block translate-y-full block-title">Desde</span>
+                        <span class="block translate-y-full block-title text-[#d4af37]">2009</span>
+                    </h2>
+                    <p class="font-inter text-gray-400 text-lg leading-relaxed mb-8 parallax-text">
+                        BarberCo. nació en 2009 con una misión clara: devolver la dignidad y el arte a la barbería moderna. Fundada por Marco Rosselli, un barbero italiano apasionado, hemos transformado miles de hombres con técnicas aprendidas en las mejor capitales del mundo. Cada corte es una obra de arte.
+                    </p>
+                    <a href="historia.html"
+                        class="px-8 py-4 bg-transparent border border-white text-white uppercase tracking-widest font-inter text-sm hover:bg-white hover:text-black transition-colors duration-500 magnetic w-max inline-block"
+                        data-cursor="hover">
+                        Conocer Más
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOOKING / FOOTER SECTION -->
+        <section id="contact"
+            class="w-full py-40 bg-[#0a0a0a] relative z-20 flex flex-col items-center justify-center text-center px-6">
+            <h2
+                class="font-oswald text-6xl md:text-9xl text-white uppercase mb-12 mix-blend-difference z-20 booking-title">
+                Reserva <br><span class="text-[#d4af37] text-stroke">Tu Lugar</span>
+            </h2>
+            <button
+                class="px-12 py-6 bg-[#d4af37] text-black uppercase tracking-[0.4em] font-oswald text-xl hover:bg-white transition-colors duration-500 magnetic shadow-[0_0_40px_rgba(212,175,55,0.3)]"
+                data-cursor="hover"
+                onclick="abrirWhatsApp()">
+                Agenda Ahora
+            </button>
+
+            <div
+                class="mt-32 w-full max-w-7xl border-t border-white/10 pt-12 flex flex-col md:flex-row justify-between items-center z-20 relative">
+                <div class="logo font-oswald text-xl font-bold tracking-widest text-white uppercase mb-6 md:mb-0">
+                    Barber<span class="text-[#d4af37]">Co.</span> &copy; 2026
+                </div>
+                <div class="flex gap-8 font-inter text-sm text-gray-500 uppercase tracking-widest">
+                    <a href="#" class="hover:text-white transition-colors magnetic" data-cursor="hover">Instagram</a>
+                    <a href="#" class="hover:text-white transition-colors magnetic" data-cursor="hover">Twitter</a>
+                    <a href="#" class="hover:text-white transition-colors magnetic" data-cursor="hover">Locación</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5491234567890?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20BarberCo." target="_blank" class="whatsapp-btn fixed bottom-10 right-10 z-50 magnetic" data-cursor="hover">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="30" fill="#25D366"></circle>
+            <path d="M30 14C21.176 14 14 21.176 14 30C14 33.078 14.898 35.918 16.382 38.298L14.5 45L21.85 43.18C24.166 44.538 26.922 45.5 30 45.5C38.824 45.5 46 38.324 46 29.5C46 20.676 38.824 13.5 30 13.5M30 14C21.176 14 14 21.176 14 30C14 33.078 14.898 35.918 16.382 38.298L14.5 45L21.85 43.18C24.166 44.538 26.922 45.5 30 45.5C38.824 45.5 46 38.324 46 29.5" fill="white" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22.5 26.5C22.258 26.033 22.033 26 21.783 26C21.533 26 21.083 26.1 20.683 26.617C20.283 27.133 19.5 28.067 19.5 29.967C19.5 31.867 20.717 33.717 20.933 34.017C21.15 34.317 23.75 38.267 27.933 40.033C31.733 41.633 32.767 41.433 33.983 41.317C35.2 41.2 37.583 40.05 38.083 38.75C38.583 37.45 38.583 36.367 38.467 36.133C38.35 35.9 38.083 35.783 37.65 35.55C37.217 35.317 35.633 34.55 35.233 34.433C34.833 34.317 34.55 34.367 34.267 34.85C34 35.3 33.417 36.133 33.133 36.417C32.85 36.7 32.55 36.75 32.117 36.533C31.683 36.317 30.533 35.9 29.133 34.667C28 33.717 27.267 32.517 27 31.917C26.733 31.317 27.017 31.05 27.233 30.833C27.417 30.65 27.65 30.367 27.867 30.083C28.083 29.8 28.15 29.583 28.317 29.283C28.483 28.983 28.433 28.717 28.317 28.483C28.2 28.25 27.533 26.667 27.083 25.717C26.683 24.917 26.267 25.033 25.967 25.033C25.7 25.033 25.433 25.033 25.167 25.033C24.9 25.033 24.483 25.15 24.083 25.667C23.683 26.183 22.867 27.083 22.867 27.517" fill="#25D366"/>
+        </svg>
+    </a>
+
+    <!-- GSAP & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+
+    <!-- Tailwind (Just for utility classes, core logic in custom CSS) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>

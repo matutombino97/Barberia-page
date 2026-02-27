@@ -1,0 +1,215 @@
+/* ==========================================================================
+   RESET & VARIABLES
+   ========================================================================== */
+   :root {
+    --bg-color: #0a0a0a;
+    --text-color: #ffffff;
+    --accent-color: #d4af37; /* Cobre / Oro oscuro */
+    --cursor-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    /* Ocultar el cursor default del navegador porque usaremos el nuestro */
+    cursor: none; 
+    overflow-x: hidden;
+}
+
+/* Evitar selección de texto en botones y drag de imágenes */
+img, button, a {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* Forzar que todos los elementos clicables no muestren cursor (para usar el nuestro) */
+a, button, input, textarea, select {
+    cursor: none !important;
+}
+
+/* ==========================================================================
+   CUSTOM CURSOR (CSS NATIVO)
+   ========================================================================== */
+.cursor-dot {
+    width: var(--cursor-size);
+    height: var(--cursor-size);
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%); /* Centrar respecto al mouse */
+    pointer-events: none; /* Crucial para que no bloquee clicks */
+    z-index: 9999;
+    mix-blend-mode: difference; /* Efecto premium al pasar sobre cosas claras */
+}
+
+.cursor-outline {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9998;
+}
+
+/* ==========================================================================
+   PRELOADER
+   ========================================================================== */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-text {
+    font-family: 'Oswald', sans-serif;
+    color: var(--accent-color);
+    font-size: 4rem;
+    letter-spacing: 0.2em;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* ==========================================================================
+   TYPOGRAPHY & UTILS
+   ========================================================================== */
+.font-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+/* ==========================================================================
+   LENIS SMOOTH SCROLL (Recommended Fixes)
+   ========================================================================== */
+html.lenis {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
+}
+/* ==========================================================================
+   WHATSAPP BUTTON
+   ========================================================================== */
+.whatsapp-btn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #25D366;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+    z-index: 50;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-btn:active {
+    transform: scale(0.95);
+}
+
+.whatsapp-btn svg {
+    transition: all 0.3s ease;
+}
+
+/* ==========================================================================
+   SERVICE CARDS ANIMATION
+   ========================================================================== */
+.service-card {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* ==========================================================================
+   SECTION ANIMATIONS
+   ========================================================================== */
+.section-subtitle {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.section-title .block-title {
+    display: block;
+    overflow: hidden;
+}
+
+.section-title .block-title span {
+    display: block;
+}
+
+/* ==========================================================================
+   HISTORY SECTION
+   ========================================================================== */
+#historia {
+    position: relative;
+}
+
+.history-image-wrapper {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.history-img {
+    transition: all 0.3s ease;
+}
+
+/* ==========================================================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================================================== */
+@media (max-width: 768px) {
+    .whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        bottom: 8px !important;
+        right: 8px !important;
+    }
+
+    .whatsapp-btn svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .booking-title {
+        font-size: 3rem;
+    }
+}
