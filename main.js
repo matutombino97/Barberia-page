@@ -373,18 +373,8 @@ gsap.to('.section-title', {
     ease: "power4.out"
 });
 
-// 6. Service Cards - AnimaciÓn al hover con interactividad
-gsap.to(['.service-card', '.history-image-wrapper'], {
-    scrollTrigger: {
-        trigger: '.max-w-7xl',
-        start: 'top center'
-    },
-    opacity: 1,
-    y: 0,
-    duration: 0.8,
-    stagger: 0.1,
-    ease: "power2.out"
-});
+// Las animaciones CSS de las service-cards manejan el fade-in
+// El ScrollTrigger interfería con las keyframes CSS, por lo que se removió
 
 // ----------------------------------------------------------------------------
 // WHATSAPP FUNCTIONALITY

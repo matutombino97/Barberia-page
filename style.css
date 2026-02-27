@@ -133,23 +133,30 @@ html.lenis {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: #25D366;
+    background: linear-gradient(135deg, #25D366 0%, #20BA5A 100%);
     box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 50;
+    animation: slideInUp 0.6s ease-out 0.3s backwards;
 }
 
 .whatsapp-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.6);
+    transform: scale(1.15) translateY(-5px);
+    box-shadow: 0 10px 28px rgba(37, 211, 102, 0.6);
 }
 
 .whatsapp-btn:active {
-    transform: scale(0.95);
+    transform: scale(1);
 }
 
 .whatsapp-btn svg {
-    transition: all 0.3s ease;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover svg {
+    transform: scale(1.1);
 }
 
 /* ==========================================================================
@@ -157,7 +164,7 @@ html.lenis {
    ========================================================================== */
 .service-card {
     opacity: 0;
-    transform: translateY(20px);
+    animation: fadeIn 0.6s ease-out forwards;
 }
 
 /* ==========================================================================
@@ -196,6 +203,65 @@ html.lenis {
 /* ==========================================================================
    RESPONSIVE ADJUSTMENTS
    ========================================================================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar animación a elementos principales */
+body {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+nav, header, .hero-content {
+    animation: slideInDown 0.8s ease-out;
+}
+
+section {
+    animation: slideInUp 0.8s ease-out;
+}
+
+.service-card, .history-card {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Delay escalonado para cards */
+.service-card:nth-child(1) { animation-delay: 0.1s; }
+.service-card:nth-child(2) { animation-delay: 0.2s; }
+.service-card:nth-child(3) { animation-delay: 0.3s; }
+
+.history-card:nth-child(1) { animation-delay: 0.2s; }
+.history-card:nth-child(2) { animation-delay: 0.4s; }
+.history-card:nth-child(3) { animation-delay: 0.6s; }
+.history-card:nth-child(4) { animation-delay: 0.8s; }
+
 @media (max-width: 768px) {
     .whatsapp-btn {
         width: 50px;

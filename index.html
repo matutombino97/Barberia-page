@@ -15,6 +15,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 
 <body>
@@ -67,7 +70,7 @@
         <header id="home" class="hero w-full h-screen relative flex items-center justify-center overflow-hidden">
             <!-- Image/Video Background -->
             <div class="hero-bg absolute inset-0 bg-[#111] bg-cover bg-center bg-no-repeat"
-                style="background-image: url('hero_bg.png'); filter: brightness(0.6);"></div>
+                style="background-image: url('https://images.unsplash.com/photo-1599447488558-c7e11a64e087?w=1600&q=80'); filter: brightness(0.6);"></div>
 
             <div class="hero-content relative z-10 text-center flex flex-col items-center gap-6">
                 <h1
@@ -168,7 +171,7 @@
                 <div class="about-image-wrapper relative h-[600px] md:h-[800px] w-full rounded-2xl overflow-hidden cursor-none shadow-[0_0_50px_rgba(212,175,55,0.1)]"
                     data-cursor="hover">
                     <div class="absolute inset-0 bg-black/40 z-10 pointer-events-none"></div>
-                    <img src="hero_bg.png" alt="Master Barber"
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1000&q=80" alt="Master Barber"
                         class="about-img absolute top-[-20%] left-0 w-full h-[140%] object-cover transform scale-110 grayscale brightness-75 hover:grayscale-0 transition-all duration-1000">
                 </div>
             </div>
@@ -182,7 +185,7 @@
                 <div class="history-image-wrapper relative h-[600px] md:h-[800px] w-full rounded-2xl overflow-hidden cursor-none shadow-[0_0_50px_rgba(212,175,55,0.1)]"
                     data-cursor="hover">
                     <div class="absolute inset-0 bg-black/40 z-10 pointer-events-none"></div>
-                    <img src="hero_bg.png" alt="Barbería Historia"
+                    <img src="https://images.unsplash.com/photo-1622290291468-a28b7c6f3fcb?w=1000&q=80" alt="Barbería Historia"
                         class="history-img absolute top-[-20%] left-0 w-full h-[140%] object-cover transform scale-110 grayscale brightness-75 hover:grayscale-0 transition-all duration-1000">
                 </div>
 
@@ -236,11 +239,9 @@
     </div>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/5491234567890?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20BarberCo." target="_blank" class="whatsapp-btn fixed bottom-10 right-10 z-50 magnetic" data-cursor="hover">
-        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="30" cy="30" r="30" fill="#25D366"></circle>
-            <path d="M30 14C21.176 14 14 21.176 14 30C14 33.078 14.898 35.918 16.382 38.298L14.5 45L21.85 43.18C24.166 44.538 26.922 45.5 30 45.5C38.824 45.5 46 38.324 46 29.5C46 20.676 38.824 13.5 30 13.5M30 14C21.176 14 14 21.176 14 30C14 33.078 14.898 35.918 16.382 38.298L14.5 45L21.85 43.18C24.166 44.538 26.922 45.5 30 45.5C38.824 45.5 46 38.324 46 29.5" fill="white" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M22.5 26.5C22.258 26.033 22.033 26 21.783 26C21.533 26 21.083 26.1 20.683 26.617C20.283 27.133 19.5 28.067 19.5 29.967C19.5 31.867 20.717 33.717 20.933 34.017C21.15 34.317 23.75 38.267 27.933 40.033C31.733 41.633 32.767 41.433 33.983 41.317C35.2 41.2 37.583 40.05 38.083 38.75C38.583 37.45 38.583 36.367 38.467 36.133C38.35 35.9 38.083 35.783 37.65 35.55C37.217 35.317 35.633 34.55 35.233 34.433C34.833 34.317 34.55 34.367 34.267 34.85C34 35.3 33.417 36.133 33.133 36.417C32.85 36.7 32.55 36.75 32.117 36.533C31.683 36.317 30.533 35.9 29.133 34.667C28 33.717 27.267 32.517 27 31.917C26.733 31.317 27.017 31.05 27.233 30.833C27.417 30.65 27.65 30.367 27.867 30.083C28.083 29.8 28.15 29.583 28.317 29.283C28.483 28.983 28.433 28.717 28.317 28.483C28.2 28.25 27.533 26.667 27.083 25.717C26.683 24.917 26.267 25.033 25.967 25.033C25.7 25.033 25.433 25.033 25.167 25.033C24.9 25.033 24.483 25.15 24.083 25.667C23.683 26.183 22.867 27.083 22.867 27.517" fill="#25D366"/>
+    <a href="https://wa.me/5491234567890?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20en%20BarberCo." target="_blank" class="whatsapp-btn fixed bottom-10 right-10 z-50 magnetic" data-cursor="hover" title="Contacta por WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="32" height="32">
+            <path d="M19.05 4.91C17.18 3.03 14.69 1.97 12.04 1.97c-5.38 0-9.78 4.4-9.78 9.77 0 1.72.44 3.4 1.29 4.88L2.07 22.23l5.14-1.35c1.43.78 3.04 1.19 4.73 1.19 5.38 0 9.78-4.4 9.78-9.77 0-2.61-1.06-5.06-2.99-6.92zM12.04 20.15c-1.48 0-2.93-.38-4.2-1.1l-.3-.18-3.12.82.83-3.04-.19-.3c-.8-1.29-1.23-2.78-1.23-4.3 0-4.47 3.63-8.1 8.1-8.1 2.16 0 4.2.84 5.73 2.36 1.53 1.53 2.37 3.56 2.37 5.73 0 4.47-3.63 8.1-8.1 8.1zm4.47-6.08c-.24-.12-1.42-.7-1.64-.78-.23-.09-.39-.09-.56.09-.17.18-.67.85-.82 1.03-.15.18-.29.2-.53.05-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.02-.37.11-.49.11-.11.24-.29.37-.44.12-.15.16-.25.25-.41.09-.16.05-.3-.01-.42-.06-.12-.56-1.35-.77-1.84-.2-.48-.4-.41-.56-.42h-.48c-.16 0-.43.06-.65.3-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.7 2.59 4.1 3.63.57.25 1.02.4 1.36.51.57.18 1.09.15 1.5.09.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/>
         </svg>
     </a>
 
